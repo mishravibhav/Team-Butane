@@ -85,20 +85,40 @@ class Home extends React.Component {
           </div>
          <button>SEE MORE</button>
         </div>
-        <div className={Styles.Justlaunch}>
+        <div style={{backgroundColor:"#ecf0f1",paddingTop:"60px"}}>
           <h2>Why Wishberry?</h2>
           <div className={Styles.borderbottom}>
           </div>
-          <p style={{fontSize:"20px"}}>We are not just a DIY platform. We also provide the following services:</p>
+          <p style={{fontSize:"20px",marginTop:"20px"}}>We are not just a DIY platform. We also provide the following services:</p>
           <div className={Styles.Services}>
               <div>
               <img src={Sliders} alt="sliders"/>
+              <h3>MARKETING STRATEGY</h3>
               </div>
               <div>
               <img src={Chart} alt="Chart"/>
+              <h3>PERSONAL CAMPAIGN CONSULTATION</h3>
               </div>
               <div>
               <img src={Envelope} alt="Envelope"/>
+              <h3>SOCIAL MEDIA & PR</h3>
+              </div>
+          </div>
+          <div className={Styles.Middiv}>
+              <div className={Styles.Circle}>
+                <h1>70%</h1>
+                <h4>Success rate</h4>
+              </div>
+              <div className={Styles.Midinfo}>
+                  <div>
+                  <h2>500 PROJECTS</h2>
+                  </div>
+                  <div>
+                  <h2>₹ 17 CRORES RAISED</h2>
+                  </div>
+                  <div>
+                  <h2>1,00,000 BACKERS</h2>
+                  </div>
               </div>
           </div>
           </div>

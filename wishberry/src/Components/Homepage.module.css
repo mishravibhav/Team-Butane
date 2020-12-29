@@ -72,6 +72,7 @@ margin-top:5px;
   border: 1px solid #95a5a6;
   border-radius: 3px;
   font-size: 14px;
+  color: black;
 }
 .modal{
   background-color: #f4d13b ;
@@ -89,8 +90,6 @@ margin-top:5px;
 visibility:visible;
 
 }
-
-
 .modal button{
   padding: 10px 20px;
   margin-top: 80px;
@@ -103,4 +102,42 @@ visibility:visible;
 background-color:white;
 color:black;
 opacity:1;
+}
+.Services{
+background-color:  #4fd198;
+display:flex;
+margin-top:30px;
+padding: 20px 50px;
+}
+.Services div{
+  margin:0px 60px;
+}
+.Services h3{
+color: white;
+}
+.Services img{
+height: 65px;
+}
+.Middiv{
+  display: flex;
+  margin:50px 260px;
+  box-shadow: 1px 1px 3px black;
+  padding:50px 100px;
+  border-radius: 10px;
+  background-color: white;
+}
+.Circle{
+ padding:70px 0px;
+ width: 270px;
+  border:7px solid  #4fd198;
+  border-radius: 50%;
+  color:#4fd198;
+  font-size: 30px;
+}
+.Midinfo{
+  text-align: left;
+  margin: 30px;
+}
+.Midinfo h2{
+  margin:20px;
 }
