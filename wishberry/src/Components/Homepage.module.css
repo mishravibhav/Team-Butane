@@ -43,7 +43,7 @@ margin-top:5px;
 .Justlaunch{
   margin:60px;
 }
-.Justlaunch button{
+.Seemore{
   background-color: #ff4200;
   color: white;
   padding:10px 20px;
@@ -51,7 +51,7 @@ margin-top:5px;
   border-radius: 4px;
   font-size: 18px;
 }
-.Justlaunch button:hover{
+.Seemore:hover{
   background-color: #ff8d64;
 }
 .Card{
@@ -60,9 +60,10 @@ margin-top:5px;
   border:2px solid #ecf0f1;
   margin: 50px 20px;
   text-align: left;
+ 
 }
 .Card h4{
-  padding:10px 15px;
+  padding:10px 10px;
  
 }
 .Card button{
@@ -136,8 +137,48 @@ height: 65px;
 }
 .Midinfo{
   text-align: left;
-  margin: 30px;
+  margin:40px 0px;
 }
 .Midinfo h2{
   margin:20px;
+}
+.Right{
+  margin:10px;
+  color: #4fd198;
+}
+.Story{
+  height: 500px;
+  width: 25%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin:50px;
+}
+.StoryTitle{
+  font-size:30px;
+  text-align:center;
+ padding-top:400px;
+ color: white;
+}
+.StoryDetail{
+  visibility: hidden;
+  border-radius: 10px;
+  margin:0px;
+  text-align:center;
+  height: 0px;
+  padding-top:90px;
+}
+.Story:hover .StoryTitle{
+
+  display: none;
+  padding-top:0px;
+}
+.Story:hover .StoryDetail{
+  visibility: visible;
+  background-color: #f4d13b;
+  transition: 400ms;
+  margin:0px;
+  height: 82%;
+  background-position:left bottom;
+  opacity: 0.9;
 }
