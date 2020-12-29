@@ -1,0 +1,143 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  }
+  
+.Homepagehero {
+  padding: 0px;
+  padding-top:130px;
+  background-image: url(https://s3.ap-south-1.amazonaws.com/wb-new/home-cover-1.jpg);
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+}
+.Homepagehero h1{
+font-size:55px;
+}
+.Homepagehero button{
+  padding:10px 30px;
+  margin:50px 20px;
+  border:2px solid black;
+  border-radius: 5px;
+  background-color:transparent;
+  color: white;
+  font-size: 16px;
+}
+.Homepagehero button:hover{
+  background-color: black;
+  transition: 400ms;
+}
+.Learnmore{
+  padding-top:30px;
+}
+.borderbottom{
+height: 7px;
+width: 110px;
+background-color: #f4d13b;
+margin: auto;
+margin-top:5px;
+}
+.Justlaunch{
+  margin:60px;
+}
+.Justlaunch button{
+  background-color: #ff4200;
+  color: white;
+  padding:10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+}
+.Justlaunch button:hover{
+  background-color: #ff8d64;
+}
+.Card{
+  width: 27%;
+  border-radius: 7px;
+  border:2px solid #ecf0f1;
+  margin: 50px 20px;
+  text-align: left;
+}
+.Card h4{
+  padding:10px 15px;
+ 
+}
+.Card button{
+  padding:5px 10px;
+  background-color: #ecf0f1;
+  margin:20px;
+  border: 1px solid #95a5a6;
+  border-radius: 3px;
+  font-size: 14px;
+  color: black;
+}
+.modal{
+  background-color: #f4d13b ;
+  opacity: 0.9;
+  height: 100%;
+  visibility: hidden;
+}
+.Img{
+  border-radius: 7px;
+ height: 180px;
+ width: 100%;
+ background-size: cover;
+}
+.Img:hover .modal{
+visibility:visible;
+
+}
+.modal button{
+  padding: 10px 20px;
+  margin-top: 80px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: transparent;
+  color: white;
+}
+.modal button:hover{
+background-color:white;
+color:black;
+opacity:1;
+}
+.Services{
+background-color:  #4fd198;
+display:flex;
+margin-top:30px;
+padding: 20px 50px;
+}
+.Services div{
+  margin:0px 60px;
+}
+.Services h3{
+color: white;
+}
+.Services img{
+height: 65px;
+}
+.Middiv{
+  display: flex;
+  margin:50px 260px;
+  box-shadow: 1px 1px 3px black;
+  padding:50px 100px;
+  border-radius: 10px;
+  background-color: white;
+}
+.Circle{
+ padding:70px 0px;
+ width: 270px;
+  border:7px solid  #4fd198;
+  border-radius: 50%;
+  color:#4fd198;
+  font-size: 30px;
+}
+.Midinfo{
+  text-align: left;
+  margin: 30px;
+}
+.Midinfo h2{
+  margin:20px;
+}
