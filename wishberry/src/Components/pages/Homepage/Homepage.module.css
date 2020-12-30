@@ -111,11 +111,12 @@
 .Services div {
   margin: 0px 60px;
 }
-.Services h3 {
+.Services h5 {
   color: white;
 }
 .Services img {
-  height: 65px;
+  height: 50px;
+  width:50px
 }
 .Middiv {
   display: flex;

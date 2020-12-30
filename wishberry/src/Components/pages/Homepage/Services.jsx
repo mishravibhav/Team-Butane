@@ -15,15 +15,15 @@ function Services() {
       <div className={Styles.Services}>
         <div>
           <img src={Sliders} alt="sliders" />
-          <h3>MARKETING STRATEGY</h3>
+          <h5>MARKETING STRATEGY</h5>
         </div>
         <div>
           <img src={Chart} alt="Chart" />
-          <h3>PERSONAL CAMPAIGN CONSULTATION</h3>
+          <h5>PERSONAL CAMPAIGN CONSULTATION</h5>
         </div>
         <div>
           <img src={Envelope} alt="Envelope" />
-          <h3>SOCIAL MEDIA & PR</h3>
+          <h5>SOCIAL MEDIA & PR</h5>
         </div>
       </div>
       <div className={Styles.Middiv}>

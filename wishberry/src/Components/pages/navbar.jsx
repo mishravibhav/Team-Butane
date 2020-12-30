@@ -1,9 +1,10 @@
 
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
+
 import {NavLink,Link} from "react-router-dom"
 import styled from "styled-components";
 import {Dropdown} from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 class Navbar extends React.Component{
 constructor(props){
