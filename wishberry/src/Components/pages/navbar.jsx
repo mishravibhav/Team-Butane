@@ -21,6 +21,7 @@ Scroll=()=>{
     color:"black",
     logo:" #ff4200"
   })
+  
 }
 componentDidMount(){
   window.addEventListener("scroll",this.Scroll)
