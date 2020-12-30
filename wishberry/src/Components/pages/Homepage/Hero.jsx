@@ -7,10 +7,10 @@ function Hero() {
     <div className={Styles.Homepagehero}>
       <h1>WISHBERRY,</h1>
       <h1>STRICTLY CREATIVE</h1>
-      <h4>
+      <h5>
         Wishberry, India’s most successful crowdfunding platform for creative
         artists,
-      </h4>
+      </h5>
       <h4>is on a mission to empower creativity in India.</h4>
       <button>SUBMIT PROJECT</button>
       <button>BROWSE PROJECTS</button>

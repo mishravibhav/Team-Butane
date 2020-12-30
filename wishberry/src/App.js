@@ -1,11 +1,13 @@
 import "./App.css";
 import Home from "./Components/pages/Homepage/Home";
-import Work from "./Components/routes/route";
+// import Work from "./Components/routes/route";
+import Success from "./Components/pages/Successpage/Success"
 function App() {
   return (
     <div className="App">
-      <Work />
+      {/* <Work /> */}
       <Home />
+      <Success/>
     </div>
   );
 }
