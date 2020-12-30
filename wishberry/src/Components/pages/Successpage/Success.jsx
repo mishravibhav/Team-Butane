@@ -21,13 +21,13 @@ class Success extends React.Component {
   render() {
     console.log(Cardinfo)
     return (
-      <div>
+     
         <div
          className={Styles.Homepagehero}
           style={{
             backgroundImage:
               "url(https://s3.ap-south-1.amazonaws.com/wb-new/success-cover-new.jpg)",
-             filter:"brightness(80%)"
+            backgroundPosition:"center"
           }}
         >
         <h1 style={{marginTop:"100px"}}>SUCCESS STORIES</h1>
@@ -40,7 +40,7 @@ class Success extends React.Component {
             <p>Explore</p>
             <img style={{ height: "15px" }} src={Downarrow} alt="down arrow" />
           </div> 
-        </div>
+       
         <div className={Successstyle.middiv}>
         <div className={Successstyle.explore}>
             <div>
@@ -90,6 +90,7 @@ class Success extends React.Component {
           }
       </div>
       </div>
+      
     );
   }
 }
