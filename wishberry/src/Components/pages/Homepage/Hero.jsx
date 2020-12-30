@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./Homepage.module.css";
-import Downarrow from "../Svgs/chevron-down-solid.svg";
+import Downarrow from "../../Svgs/chevron-down-solid.svg";
 
 function Hero() {
   return (

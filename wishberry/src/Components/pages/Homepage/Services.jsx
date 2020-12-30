@@ -1,8 +1,9 @@
 import React from "react";
 import Styles from "./Homepage.module.css";
-import Sliders from "../Svgs/sliders-h-solid.svg";
-import Chart from "../Svgs/chart-bar-regular.svg";
-import Envelope from "../Svgs/envelope-regular.svg";
+import Sliders from "../../Svgs/sliders-h-solid.svg";
+import Chart from "../../Svgs/chart-bar-regular.svg";
+import Envelope from "../../Svgs/envelope-regular.svg"
+
 function Services() {
   return (
     <div style={{ backgroundColor: "#ecf0f1", padding: "60px 0px" }}>
