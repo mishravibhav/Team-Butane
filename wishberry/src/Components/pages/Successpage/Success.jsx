@@ -14,8 +14,10 @@ import Theatre from "../../Svgs/theater-masks-solid.svg";
 import Card from "./Card.jsx";
 import Cardinfo from "./Card.json"
 class Success extends React.Component {
-  constructor(props) {
-    super(props)
+  scroll=()=>{
+    window.scrollTo({
+      top:560,
+    })
   }
 
   render() {
@@ -30,17 +32,18 @@ class Success extends React.Component {
             backgroundPosition:"center"
           }}
         >
-        <h1 style={{marginTop:"100px"}}>SUCCESS STORIES</h1>
+          <div style={{textShadow:"1px 1px 1px black"}}>
+        <h1 style={{marginTop:"100px",}}>SUCCESS STORIES</h1>
           <h5>
           From India's first animated Sanskrit film to a slightly twisted party game,
           </h5>
           <h5>take a look at all of our successfully crowdfunded projects!</h5>
          
           <div className={Styles.Learnmore}>
-            <p>Explore</p>
-            <img style={{ height: "15px" }} src={Downarrow} alt="down arrow" />
+            <p  onClick={this.scroll} >Explore</p>
+            <img  onClick={this.scroll}  style={{ height: "15px" }} src={Downarrow} alt="down arrow" />
           </div> 
-       
+          </div>
         <div className={Successstyle.middiv}>
         <div className={Successstyle.explore}>
             <div>
