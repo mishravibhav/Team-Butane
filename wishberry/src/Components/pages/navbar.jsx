@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { Dropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Login from "./Loginpage/login"
-
+import {AuthContext}from "../authContext"
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
@@ -15,7 +15,7 @@ class Navbar extends React.Component {
       background:"transparent",
       color:"white",
       logo:"transparent",
-      isOpen:false
+      
     };
   }
 Scroll=()=>{
@@ -28,12 +28,15 @@ Scroll=()=>{
 componentDidMount(){
   window.addEventListener("scroll",this.Scroll)
 }
-openModal = () => this.setState({ isOpen: true });
-closeModal = () => this.setState({ isOpen: false });
+//openModal = () => this.setState({ isOpen: true });
+//closeModal = () => this.setState({ isOpen: false });
 
   render() {
+    console.log(this.context)
+    const{ isOpen,closeModal,openModal,isAuth,isLoading,handleAuth,isError,idChange,name}=this.context
+    console.log(name)
     return (
-      <div  style={{backgroundColor:`${this.state.background}`,position:"fixed",top:"0",width:"100%",padding:"20px"}}>
+      <div  style={{backgroundColor:`${this.state.background}`,position:"fixed",top:"0",width:"100%",padding:"5px"}}>
         <Link to="/">
           <img
             style={{
@@ -49,15 +52,15 @@ closeModal = () => this.setState({ isOpen: false });
           />
         </Link>
 
-        <Dropdown style={{ marginLeft: "50%", background: "none" }}>
-          <Dropdown.Toggle variant="light">Browser Projects</Dropdown.Toggle>
+        <Dropdown style={{ marginLeft: "55%" }}>
+          <Dropdown.Toggle variant="none" style={{background: "none" ,outline:"none",border:"none" }}>Browser Projects</Dropdown.Toggle>
 
           <Dropdown.Menu>
             <Dropdown.Item eventKey="1">
               <NavLink
                 to="/current-projects"
                 style={{
-                  padding: "10px",
+                  padding: "5px",
                   textDecoration: "none",
                   color: "black",
                 }}
@@ -72,7 +75,7 @@ closeModal = () => this.setState({ isOpen: false });
               <NavLink
                 to="/sucessful-projects"
                 style={{
-                  padding: "10px",
+                  padding: "5px",
                   textDecoration: "none",
                   color: "black",
                 }}
@@ -109,7 +112,9 @@ closeModal = () => this.setState({ isOpen: false });
           </NavLink>
 
           <NavLink
-            to="login-register"
+
+            
+            to={name}
             style={{
               padding: "10px",
               textDecoration: "none",
@@ -120,9 +125,52 @@ closeModal = () => this.setState({ isOpen: false });
            
       
           >
-            <a  onClick={this.openModal}>
+            {idChange ?    
+            <Dropdown style={{ background: "none" ,marginRight:"50px",float:"right"}}>
+          <Dropdown.Toggle style={{border:"none",outline:"none",background:"none",color:"black" ,outline:"none",  }}>{name}</Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item eventKey="1">
+              <NavLink
+                to="/current-projects"
+                style={{
+                  padding: "5px",
+                  textDecoration: "none",
+                  color: "black",
+                }}
+                activeStyle={{ fontWeight: "bold", color: "black" }}
+              >
+                Current Projects
+              </NavLink>
+            </Dropdown.Item>
+            <Dropdown.Divider />
+
+            <Dropdown.Item eventKey="2">
+              <NavLink
+                to="/sucessful-projects"
+                style={{
+                  padding: "5px",
+                  textDecoration: "none",
+                  color: "black",
+                }}
+                activeStyle={{ fontWeight: "bold", color: "black" }}
+              >
+                Sucessful Projects
+              </NavLink>
+            </Dropdown.Item>
+            <Dropdown.Divider />
+          </Dropdown.Menu>
+
+
+
+          </Dropdown>
+
+
+           :
+            
+            <a  onClick={openModal}>
             Login/Register
-            </a>
+            </a>}
             
       
             
@@ -130,17 +178,22 @@ closeModal = () => this.setState({ isOpen: false });
         </Dropdown>
 
         {/* <hr  /> */}
-        {this.state.isOpen ? 
+        {isOpen ? 
           <Login
-            closeModal={this.closeModal} 
-            isOpen={this.state.isOpen} 
-            handleSubmit={this.handleSubmit}
+            closeModal={closeModal} 
+            isOpen={isOpen} 
+            handleAuth={handleAuth}
+            isAuth={isAuth}
+            isLoading={isLoading}
+            isError={isError}
           /> 
-          : 
-          null 
+          : <Redirect to="/how-it-works" />
+          
         }
+
       </div>
     );
   }
 }
+Navbar.contextType=AuthContext
 export default Navbar;
