@@ -1,0 +1,12 @@
+.ptext:hover{
+    color: red;
+}
+.ptext{
+    text-decoration: none;
+    color: black;
+    
+}
+.h{
+    border-bottom: 5px solid yellow;
+    width: 60px;
+}

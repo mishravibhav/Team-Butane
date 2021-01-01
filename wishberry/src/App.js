@@ -1,9 +1,12 @@
-import './App.css';
-import Home from "./Components/Home"
+import "./App.css";
+
+import Work from "./Components/routes/route";
+import Dashboard from "./Components/pages/Dashboard/Dashboard"
 function App() {
   return (
     <div className="App">
-    <Home/>
+      <Work />
+      {/* <Dashboard/> */}
     </div>
   );
 }

@@ -1,0 +1,18 @@
+[
+    {
+        "id": 0,
+        "title": "Navarasa",
+        "subtitle": "Nisha Satpute",
+        "info": "Navarasa is a music album of nine ghazals, composed in different genres and languages with a common aim to evoke a specific emotion pertaining to the Rasa.",
+        "type": "Music",
+        "url": "https://wb-new.s3.ap-south-1.amazonaws.com/campaigns/81384/cover/1604499419872_33808828-1D1B-467B-A189-8785330BF34A.jpeg"
+    },
+    {
+        "id": 1,
+        "title": "Forest Archives - A Coffee Table Book",
+        "subtitle": "Lokesh Dodla",
+        "info": "Forest Archives is a fine art coffee table book showcasing some of the most evocative and",
+        "type": "Photography",
+        "url": "https://wb-new.s3.ap-south-1.amazonaws.com/campaigns/81093/cover/1593374282627_Home.jpg"
+    }
+]
