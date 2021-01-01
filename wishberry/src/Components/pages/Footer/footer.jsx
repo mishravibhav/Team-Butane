@@ -6,15 +6,15 @@ import './Footer.css'
 const Footer = ()=>{
     return(
         <div>
-            <div style={{border:"1px solid black",textAlign:"left",height:"400px",color:"white"}}>
-                <div style={{border:"1px solid black",textAlign:"left",height:"80px",background:"Aqua"}}>
+            <div style={{textAlign:"left",height:"400px",color:"white"}}>
+                <div style={{textAlign:"left",height:"80px",background:"Aqua"}}>
                     <div class="col-4" style={{float:"left"}}>
                         <img style={{height:"50px",width:"auto",float:"left",margin:"10px"}} src="https://p7.hiclipart.com/preview/836/833/124/flag-of-india-computer-icons-national-flag-indian-flag.jpg" alt=""/>
                         <p style={{float:"left",margin:"20px"}}>Made In India</p>
                     </div>
                     <div class="col-4" style={{float:"left"}}>
                         <i style={{padding:"15px"}} class="fab fa-3x fa-facebook"></i>
-                        <i style={{padding:"15px"}} class="fab fa-3x fa-twitter-square"></i>
+                        <i style={{padding:"15px"}} class="fab fa-3x fa-instagram-square"></i>
                         <i style={{padding:"15px"}} class="fab fa-3x fa-twitter-square"></i>
                         <i style={{padding:"15px"}} class="fab fa-3x fa-youtube-square"></i>
                     </div>
@@ -57,7 +57,9 @@ const Footer = ()=>{
                     <p>info@wishberry.in</p>
                     <p>+91 22-49426200</p>
                 </div>
+                
             </div>
+            <div class="col-12" style={{color:"black"}}><p>© 2019 All Rights Reserved Wishberry Online Services Pvt. Ltd. (CIN: U74999MH2009PTC191803)</p></div>
         </div>
     )
 }
