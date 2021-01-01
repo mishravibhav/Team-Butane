@@ -4,7 +4,8 @@ import Navbar from "../pages/navbar";
 import Success from "../pages/Successpage/Success";
 import Working from "../pages/work";
 import Home from "../pages/Homepage/Home";
-import Submit from "../pages/Submitprojects/Submit"
+import Submit from "../pages/Submitprojects/Submit";
+import Dashboard from "../pages/Dashboard/Dashboard"
 const Routing = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const Routing = () => {
         <Route path="/how-it-works" render={() => <Working />} />
         <Route path="/sucessful-projects" render={() =>  <Success />}/>
         <Route path="/submit-projects" render={() =>  <Submit />}/>
+        <Route path="/login-register" render={()=> <Dashboard/>}  />
       </Switch>
     </div>
   );

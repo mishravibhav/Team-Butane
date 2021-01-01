@@ -1,6 +1,5 @@
 import React from 'react'
 import NavBar from '../../pages/navbar'
-import Footer from "../Footer/footer"
 import './submit.css'
 
 const Submit = ()=>{
@@ -31,8 +30,6 @@ const Submit = ()=>{
                     <button className="btn">BACK TO HOME</button>
                 </div>
             </div>
-            <Footer/>
-
         </div>
     )
 }

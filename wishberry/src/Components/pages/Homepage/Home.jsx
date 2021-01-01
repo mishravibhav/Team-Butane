@@ -4,7 +4,7 @@ import Justlaunch from "./Justlaunch";
 import Services from "./Services";
 import Curated from "./Curated"
 import Stories from "./Stories";
-import Footer from "../Footer/footer"
+
 class Home extends React.Component {
   //   constructor(props) {
   //     super(props);
@@ -18,7 +18,7 @@ class Home extends React.Component {
         <Services />
         <Stories />
         <Curated/>
-        <Footer/>
+
 
       </div>
     );

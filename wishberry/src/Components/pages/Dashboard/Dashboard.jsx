@@ -1,6 +1,7 @@
 import React from "react";
 import Styles from "../Homepage/Homepage.module.css";
 import Dashboardstyles from "./Dashboard.module.css";
+import Footer from "../Footer/footer"
 class Myprofile extends React.Component {
   constructor(props) {
     super(props);
@@ -56,7 +57,8 @@ profile=(e)=>{
 }
   render() {
     return (
-      <div style={{margin:"50px 220px", justifyContent: "center" }}>
+      <div>
+      <div style={{margin:"150px 220px", justifyContent: "center" }}>
         <h3>My Profile</h3>
         <div className={Styles.borderbottom}></div>
 
@@ -89,9 +91,10 @@ profile=(e)=>{
                    <input type="text"placeholder="Email ID" />
                </div>
               </div>
-
           </div>
         </div>
+      </div>
+        {/* <Footer/> */}
       </div>
     );
   }

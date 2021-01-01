@@ -1,18 +1,19 @@
 import React from "react";
 import Styles from "../Homepage/Homepage.module.css";
-import Successstyle from "./Success.module.css"
+import Successstyle from "./Success.module.css";
 import Downarrow from "../../Svgs/chevron-down-solid.svg";
-import Palette from "../../Svgs/palette-solid.svg"
-import Bulb from "../../Svgs/lightbulb-regular.svg"
-import Dance from "../../Svgs/glass-cheers-solid.svg"
-import Design from "../../Svgs/pencil-ruler-solid.svg"
-import Film from  "../../Svgs/film-solid.svg"
-import Music from "../../Svgs/music-solid.svg"
-import Camera from "../../Svgs/camera-solid.svg"
-import Publish from "../../Svgs/print-solid.svg"
+import Palette from "../../Svgs/palette-solid.svg";
+import Bulb from "../../Svgs/lightbulb-regular.svg";
+import Dance from "../../Svgs/glass-cheers-solid.svg";
+import Design from "../../Svgs/pencil-ruler-solid.svg";
+import Film from  "../../Svgs/film-solid.svg";
+import Music from "../../Svgs/music-solid.svg";
+import Camera from "../../Svgs/camera-solid.svg";
+import Publish from "../../Svgs/print-solid.svg";
 import Theatre from "../../Svgs/theater-masks-solid.svg";
 import Card from "./Card.jsx";
-import Cardinfo from "./Card.json"
+import Cardinfo from "./Card.json";
+
 class Success extends React.Component {
   scroll=()=>{
     window.scrollTo({
@@ -23,7 +24,7 @@ class Success extends React.Component {
   render() {
     console.log(Cardinfo)
     return (
-     
+     <div style={{marginBottom:"1600px"}}>
         <div
          className={Styles.Homepagehero}
           style={{
@@ -93,7 +94,7 @@ class Success extends React.Component {
           }
       </div>
       </div>
-      
+      </div>
     );
   }
 }

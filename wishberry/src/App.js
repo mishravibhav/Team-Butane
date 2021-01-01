@@ -1,12 +1,12 @@
 import "./App.css";
 
 import Work from "./Components/routes/route";
-import Dashboard from "./Components/pages/Dashboard/Dashboard"
+import Footer from "./Components/pages/Footer/footer";
 function App() {
   return (
     <div className="App">
       <Work />
-      <Dashboard/>
+      <Footer />
     </div>
   );
 }
