@@ -3,6 +3,7 @@ import { Accordion, Card, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styled from "styled-components";
 import Styles from "./work.module.css";
+import Footer from "./Footer/footer"
 
 const Head = styled.div`
   margin-top: 50px;
@@ -370,7 +371,9 @@ class Working extends React.Component {
             <div>- GST wherever applicable.</div>
           </Note>
         </Box>
+        <Footer />
       </div>
+      
     );
   }
 }
