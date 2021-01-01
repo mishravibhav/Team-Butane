@@ -5,6 +5,7 @@ import Success from "../pages/Successpage/Success";
 import Working from "../pages/work";
 import Home from "../pages/Homepage/Home";
 import Login from "../pages/Loginpage/login"
+import Dashboard from "../pages/Dashboard/Dashboard"
 const Routing = () => {
   return (
     <div>
@@ -15,7 +16,7 @@ const Routing = () => {
         <Route exact path="/" render={() => <Home />} />
         <Route exact path="/how-it-works" render={() => <Working />} />
         <Route exact path="/sucessful-projects" render={() =>  <Success />}/>
-
+        <Route path="/dashboard" render={()=> <Dashboard/>}  />
       </Switch>
     </div>
   );

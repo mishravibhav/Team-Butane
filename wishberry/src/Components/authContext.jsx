@@ -25,8 +25,8 @@ class AuthContextProvider extends React.Component{
             isLoading:true
         })
         console.log(email + password)
-        if(email==="admin" && password ==="admin"){
-           
+        if(Data.find((item)=>item.username===email && item.password ===password)){
+          
           this.setState({
             isLoading:false,
             isAuth:true,

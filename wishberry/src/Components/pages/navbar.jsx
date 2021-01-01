@@ -52,7 +52,7 @@ componentDidMount(){
           />
         </Link>
 
-        <Dropdown style={{ marginLeft: "55%" }}>
+        <Dropdown style={{ marginLeft: "50%" }}>
           <Dropdown.Toggle variant="none" style={{background: "none" ,outline:"none",border:"none" }}>Browser Projects</Dropdown.Toggle>
 
           <Dropdown.Menu>
@@ -114,11 +114,12 @@ componentDidMount(){
           <NavLink
 
             
-            to={name}
+            to="/Login-register"
             style={{
-              padding: "10px",
+              padding: "0px",
               textDecoration: "none",
               color: `${this.state.color}`,
+            
             }}
             activeStyle={{ fontWeight: "bold", color: "black" }}
             
@@ -126,46 +127,29 @@ componentDidMount(){
       
           >
             {idChange ?    
-            <Dropdown style={{ background: "none" ,marginRight:"50px",float:"right"}}>
-          <Dropdown.Toggle style={{border:"none",outline:"none",background:"none",color:"black" ,outline:"none",  }}>{name}</Dropdown.Toggle>
+        <div style={{padding:"0px"}}>
 
-          <Dropdown.Menu>
-            <Dropdown.Item eventKey="1">
-              <NavLink
-                to="/current-projects"
-                style={{
-                  padding: "5px",
-                  textDecoration: "none",
-                  color: "black",
-                }}
-                activeStyle={{ fontWeight: "bold", color: "black" }}
-              >
-                Current Projects
-              </NavLink>
-            </Dropdown.Item>
-            <Dropdown.Divider />
-
-            <Dropdown.Item eventKey="2">
-              <NavLink
-                to="/sucessful-projects"
-                style={{
-                  padding: "5px",
-                  textDecoration: "none",
-                  color: "black",
-                }}
-                activeStyle={{ fontWeight: "bold", color: "black" }}
-              >
-                Sucessful Projects
-              </NavLink>
-            </Dropdown.Item>
-            <Dropdown.Divider />
-          </Dropdown.Menu>
-
-
-
-          </Dropdown>
-
-
+        <NavLink
+            to="/dashboard"
+            style={{
+              float:"right",
+              textDecoration: "none",
+              marginTop:"0px",
+              marginRight:"25px",
+              color:`${this.state.color}`,
+            }}
+            activeStyle={{ fontWeight: "bold", color: "black" }}
+          >
+            <div>
+              <img src="https://www.flaticon.com/svg/static/icons/svg/847/847969.svg" style={{marginRight:"10px"}}alt=""/>
+            {name}
+            </div>
+         
+          </NavLink>
+          <Redirect to ="/dashboard" />
+        </div>
+        
+        
            :
             
             <a  onClick={openModal}>
@@ -178,6 +162,7 @@ componentDidMount(){
         </Dropdown>
 
         {/* <hr  /> */}
+        
         {isOpen ? 
           <Login
             closeModal={closeModal} 
@@ -187,7 +172,7 @@ componentDidMount(){
             isLoading={isLoading}
             isError={isError}
           /> 
-          : <Redirect to="/how-it-works" />
+          : null
           
         }
 

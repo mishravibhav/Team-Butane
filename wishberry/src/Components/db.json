@@ -1,16 +1,16 @@
 [{
     "id":1,
-    "username":"bhupendra",
-    "password":"bhupendra"
+    "username":"Bhupendra",
+    "password":"Bhupendra"
 },
 {
     "id":2,
-    "username":"swapnil",
-    "password":"swapnil"
+    "username":"Swapnil",
+    "password":"Swapnil"
 },
 {
-    "id":1,
-    "username":"vibhav",
-    "password":"vibhav"
+    "id":3,
+    "username":"Vibhav",
+    "password":"Vibhav"
 }
 ]
