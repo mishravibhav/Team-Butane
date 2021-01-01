@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "./Homepage.module.css";
 import Cardinfo from "./Card.json";
 import Card from "../Successpage/Card.jsx";
-import Successstyle from "..//Successpage/Success.module.css"
+import Successstyle from "../Successpage/Success.module.css"
 function Justlaunch() {
   return (
     <div>

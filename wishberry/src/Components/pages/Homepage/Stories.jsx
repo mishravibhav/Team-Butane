@@ -6,7 +6,7 @@ function Stories() {
     <div>
       <h2>Our Success Stories</h2>
       <div className={Styles.borderbottom}></div>
-      <div style={{ display: "flex" }}>
+      <div className={Styles.Storybox}>
         <div
           className={Styles.Story}
           style={{

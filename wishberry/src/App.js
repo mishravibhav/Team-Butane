@@ -1,11 +1,11 @@
 import "./App.css";
 
-// import Work from "./Components/routes/route";
+import Work from "./Components/routes/route";
 import Dashboard from "./Components/pages/Dashboard/Dashboard"
 function App() {
   return (
     <div className="App">
-      {/* <Work /> */}
+      <Work />
       <Dashboard/>
     </div>
   );
