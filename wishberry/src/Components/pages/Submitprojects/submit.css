@@ -1,0 +1,30 @@
+.content{
+    padding: 100px;
+}
+.h-1{
+    color: #ff4200;
+    font-size: 42px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    font-family: 'PT Sans';
+    font-weight: 700
+}
+.para{
+    font-family: 'Muli', Helvetica, Arial, sans-serif;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: 300;
+}
+.btn{
+    background-color: #ff4200;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 0.7em 1.5em;
+    letter-spacing: 1px;
+    font-weight: 400;
+
+}
