@@ -1,15 +1,13 @@
 import React from "react";
 
-import { NavLink, Link , Redirect} from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
 import { Dropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Login from "./Loginpage/login"
-import {AuthContext}from "../authContext"
+
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
-   
 
     this.state = {
       background:"transparent",
@@ -28,15 +26,9 @@ Scroll=()=>{
 componentDidMount(){
   window.addEventListener("scroll",this.Scroll)
 }
-//openModal = () => this.setState({ isOpen: true });
-//closeModal = () => this.setState({ isOpen: false });
-
   render() {
-    console.log(this.context)
-    const{ isOpen,closeModal,openModal,isAuth,isLoading,handleAuth,isError,idChange,name}=this.context
-    console.log(name)
     return (
-      <div  style={{backgroundColor:`${this.state.background}`,position:"fixed",top:"0",width:"100%",padding:"5px"}}>
+      <div  style={{backgroundColor:`${this.state.background}`,position:"fixed",top:"0",width:"100%",padding:"20px"}}>
         <Link to="/">
           <img
             style={{
@@ -52,15 +44,15 @@ componentDidMount(){
           />
         </Link>
 
-        <Dropdown style={{ marginLeft: "50%" }}>
-          <Dropdown.Toggle variant="none" style={{background: "none" ,outline:"none",border:"none" }}>Browser Projects</Dropdown.Toggle>
+        <Dropdown style={{ marginLeft: "45%", background: "none" }}>
+          <Dropdown.Toggle variant="light">Browser Projects</Dropdown.Toggle>
 
           <Dropdown.Menu>
             <Dropdown.Item eventKey="1">
               <NavLink
                 to="/current-projects"
                 style={{
-                  padding: "5px",
+                  padding: "10px",
                   textDecoration: "none",
                   color: "black",
                 }}
@@ -75,7 +67,7 @@ componentDidMount(){
               <NavLink
                 to="/sucessful-projects"
                 style={{
-                  padding: "5px",
+                  padding: "10px",
                   textDecoration: "none",
                   color: "black",
                 }}
@@ -112,73 +104,22 @@ componentDidMount(){
           </NavLink>
 
           <NavLink
-
-            
-            to="/Login-register"
+            to="/login-register"
             style={{
-              padding: "0px",
+              padding: "10px",
               textDecoration: "none",
               color: `${this.state.color}`,
-            
-            }}
-            activeStyle={{ fontWeight: "bold", color: "black" }}
-            
-           
-      
-          >
-            {idChange ?    
-        <div style={{padding:"0px"}}>
-
-        <NavLink
-            to="/dashboard"
-            style={{
-              float:"right",
-              textDecoration: "none",
-              marginTop:"0px",
-              marginRight:"25px",
-              color:`${this.state.color}`,
+              paddingTop: "100px",
             }}
             activeStyle={{ fontWeight: "bold", color: "black" }}
           >
-            <div>
-              <img src="https://www.flaticon.com/svg/static/icons/svg/847/847969.svg" style={{marginRight:"10px"}}alt=""/>
-            {name}
-            </div>
-         
-          </NavLink>
-          <Redirect to ="/dashboard" />
-        </div>
-        
-        
-           :
-            
-            <a  onClick={openModal}>
             Login/Register
-            </a>}
-            
-      
-            
-       </NavLink>
+          </NavLink>
         </Dropdown>
 
         {/* <hr  /> */}
-        
-        {isOpen ? 
-          <Login
-            closeModal={closeModal} 
-            isOpen={isOpen} 
-            handleAuth={handleAuth}
-            isAuth={isAuth}
-            isLoading={isLoading}
-            isError={isError}
-          /> 
-          : null
-          
-        }
-
       </div>
     );
   }
 }
-Navbar.contextType=AuthContext
 export default Navbar;

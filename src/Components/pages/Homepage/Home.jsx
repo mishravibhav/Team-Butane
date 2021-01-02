@@ -17,8 +17,6 @@ class Home extends React.Component {
         <Services />
         <Stories />
         <Curated/>
-
-
       </div>
     );
   }

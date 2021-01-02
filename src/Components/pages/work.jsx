@@ -102,7 +102,7 @@ class Working extends React.Component {
       <div style={{marginTop:"100px"}}>
         <Head>Crowdfunding Basics</Head>
         <Line />
-        <Accordion style={{overFlow:"hidden"}}>
+        <Accordion>
           <Box>
             <Card>
               <Card.Header>

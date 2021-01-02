@@ -147,63 +147,6 @@
   margin: 10px;
   color: #4fd198;
 }
-@media screen and (max-width:600px){
-  .Services {
-    background-color: #4fd198;
-    display: flex;
-    margin-top: 30px;
-    padding: 5px 20px;
-  }
-  .Services div {
-    margin:0px;
-  }
-  .Services h5 {
-    color: white;
-    font-size: 15px;
-  }
-  .Services img {
-    height: 30px;
-    width:30px
-  }
-  .Middiv {
-    display: flex;
-    margin: 50px 50px;
-    box-shadow: 1px 1px 3px black;
-    padding: 20px 20px;
-    border-radius: 10px;
-    background-color: white;
-  }
-  .Circle {
-    padding: 15px;
-    width: 100px;
-    height: 100px;
-    border: 2px solid #4fd198;
-    border-radius: 50%;
-    color: #4fd198;
-    margin: 50px 0px;
-  }
-  .Circle h1{
-    font-size: 15px;
-  }
-  .Circle h4{
-    font-size: 15px;
-  }
-  .Midinfo {
-    text-align: left;
-    margin: 40px 0px;
-  }
-  .Midinfo h2 {
-    margin: 20px;
-    font-size:13px;
-  }
-  .Right {
-    margin: 10px;
-    color: #4fd198;
-  }
-}
-.Storybox{
-  display: flex;
-}
 .Story {
   height: 500px;
   width: 25%;
@@ -239,47 +182,6 @@
   background-position: left bottom;
   opacity: 0.9;
 }
-@media screen and (max-width:600px){
-  .Storybox{
-    display: flex;
-    flex-direction: column;
-  }
-  .Story {
-    height: 500px;
-    width: 80%;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 30px auto;
-  }
-  .StoryTitle {
-    font-size: 30px;
-    text-align: center;
-    padding-top: 400px;
-    color: white;
-  }
-  .StoryDetail {
-    visibility: hidden;
-    border-radius: 10px;
-    margin: 0px;
-    text-align: center;
-    height: 0px;
-    padding-top: 90px;
-  }
-  .Story:hover .StoryTitle {
-    display: none;
-    padding-top: 0px;
-  }
-  .Story:hover .StoryDetail {
-    visibility: visible;
-    background-color: #f4d13b;
-    transition: 400ms;
-    margin: 0px;
-    height: 100%;
-    background-position: left bottom;
-    opacity: 0.9;
-  }
-}
 .Curated {
   display: flex;
   margin: 40px 80px;
@@ -303,31 +205,4 @@
   transition: 700ms;
   padding: 230px 0px 0px 0px;
   visibility: visible;
-}
-@media screen and (max-width:600px){
-  .Curated {
-    display: flex;
-    margin: 40px 80px;
-    flex-direction: column;
-  }
-  .Content {
-    height: 250px;
-    margin:30px auto;
-    width: 250px;
-    background-size: cover;
-    background-color: white;
-    border-radius: 10px;
-  }
-  
-  .Contenteffect {
-    background-color: yellow;
-    visibility: hidden;
-    border-radius: 10px;
-    opacity: 0.8;
-  }
-  .Content:hover .Contenteffect {
-    transition: 700ms;
-    padding: 230px 0px 0px 0px;
-    visibility: visible;
-  }
 }
