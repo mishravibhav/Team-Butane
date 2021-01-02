@@ -21,7 +21,7 @@ class Success extends React.Component {
   render() {
     console.log(Cardinfo)
     return (
-     
+     <div style={{marginBottom:"1600px"}} >
         <div
          className={Styles.Homepagehero}
           style={{
@@ -88,6 +88,7 @@ class Success extends React.Component {
                   return <Card key={item.id} item={item}/>
               })
           }
+      </div>
       </div>
       </div>
       

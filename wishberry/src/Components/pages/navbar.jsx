@@ -52,8 +52,8 @@ componentDidMount(){
           />
         </Link>
 
-        <Dropdown style={{ marginLeft: "50%" }}>
-          <Dropdown.Toggle variant="none" style={{background: "none" ,outline:"none",border:"none" }}>Browser Projects</Dropdown.Toggle>
+        <Dropdown style={{ marginLeft: "50%" ,focus:"none"}}>
+          <Dropdown.Toggle variant="none" style={{ color: `${this.state.color}`,background: "none" ,outline:"none",border:"none" }}>Browser Projects</Dropdown.Toggle>
 
           <Dropdown.Menu>
             <Dropdown.Item eventKey="1">
