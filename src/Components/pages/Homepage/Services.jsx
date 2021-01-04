@@ -1,8 +1,9 @@
 import React from "react";
 import Styles from "./Homepage.module.css";
-import Sliders from "../Svgs/sliders-h-solid.svg";
-import Chart from "../Svgs/chart-bar-regular.svg";
-import Envelope from "../Svgs/envelope-regular.svg";
+import Sliders from "../../Svgs/sliders-h-solid.svg";
+import Chart from "../../Svgs/chart-bar-regular.svg";
+import Envelope from "../../Svgs/envelope-regular.svg"
+
 function Services() {
   return (
     <div style={{ backgroundColor: "#ecf0f1", padding: "60px 0px" }}>
@@ -14,15 +15,15 @@ function Services() {
       <div className={Styles.Services}>
         <div>
           <img src={Sliders} alt="sliders" />
-          <h3>MARKETING STRATEGY</h3>
+          <h5>MARKETING STRATEGY</h5>
         </div>
         <div>
           <img src={Chart} alt="Chart" />
-          <h3>PERSONAL CAMPAIGN CONSULTATION</h3>
+          <h5>PERSONAL CAMPAIGN CONSULTATION</h5>
         </div>
         <div>
           <img src={Envelope} alt="Envelope" />
-          <h3>SOCIAL MEDIA & PR</h3>
+          <h5>SOCIAL MEDIA & PR</h5>
         </div>
       </div>
       <div className={Styles.Middiv}>

@@ -1,0 +1,36 @@
+.explore img{
+    height: 40px;
+}
+.explore p{
+color: white;
+font-size: 15px;
+}
+.explore p:hover{
+color: red;
+cursor: pointer;
+}
+.explore div{
+    margin:20px 35px;
+}
+.explore{
+  justify-content: center;
+    width: 100%;
+    display: flex;
+}
+.middiv{
+    background-color:black;
+}
+.middiv input{
+padding: 6px 430px;
+margin-bottom: 40px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+}
+@media screen and (max-width:500px){
+    .grid{
+        display: grid;
+        grid-template-columns: 450px;
+    }
+}
